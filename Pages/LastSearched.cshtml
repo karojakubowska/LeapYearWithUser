@@ -1,0 +1,16 @@
+﻿@page
+@model LeapYearWithUser.Pages.LastSearched
+@{
+    <h1>Ostatnie wyszukiwania</h1>
+    
+            //<span>
+            //    @item.Result
+            //</span>
+            <div class="text-center">
+            @foreach (var item in @Model.Records) {
+                <p>@item.Result</p>
+            }
+            </div>
+            <br/>
+        
+}
